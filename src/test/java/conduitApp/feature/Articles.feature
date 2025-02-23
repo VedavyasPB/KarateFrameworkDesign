@@ -10,10 +10,10 @@ Feature: Articles
     #   When method post
     #   Then status 201
     #   And match response.article.title == 'tester tester'
-    @debug
+    # @debug
     Scenario: create and delete an article
       Given path 'articles'
-      And request {article: {title: "api tester", description: "api tester", body: "api tester", tagList: []}}
+      And request {article: {title: "api tester bro", description: "api tester bro", body: "api tester bro", tagList: []}}
       When method post
       Then status 201
       * def articleId = response.article.slug
@@ -22,7 +22,7 @@ Feature: Articles
       Given path 'articles'
       When method Get
       Then status 200
-      And match response.articles[0].title == 'api tester'
+      And match response.articles[0].title == 'api tester bro'
 
       Given path 'articles',articleId
       When method Delete
@@ -32,6 +32,6 @@ Feature: Articles
       Given path 'articles'
       When method Get
       Then status 200
-      And match response.articles[0].title != 'api tester'
+      And match response.articles[0].title != 'api tester bro'
 
 

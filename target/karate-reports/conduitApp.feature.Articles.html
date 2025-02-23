@@ -49,13 +49,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-02-10 11:49:55 PM</div>
+    <div>2025-02-24 12:09:52 AM</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item failed">
-            <a href="#[2:18]"><span>[2:18]</span> <span>create and delete an article</span></a>
+            <a href="#[1:14]"><span>[1:14]</span> <span>create and delete an article</span></a>
           </div>
         </div>
       </div>
@@ -69,57 +69,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[2:18]">
+          <div class="scenario-heading" id="[1:14]">
             <div class="heading-container">
               <div class="scenario-tags">
                 <a class="badge badge-primary" href="karate-tags.html">debug</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[2:18]</span>
+                Scenario: <span>[1:14]</span>
                 <span class="scenario-name">create and delete an article</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>595</span>
+              <span>ms:</span>&nbsp;<span>521</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[2:18]bg">
+            <div class="step-container" id="[1:14]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[2:18]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.3">
-      <div class="step-ref bg-step">3</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url &#39;https://conduit-api.bondaracademy.com/api/&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2:18]bg"><div>
+          <div data-parent="[1:14]bg"><div>
   
 
   
@@ -129,10 +101,73 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.CreateToken</div>
+      </div>
+      <div class="time-cell passed">1092</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -147,17 +182,134 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[2:18]bg"><div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {user: {&quot;email&quot;: &quot;#(userEmail)&quot;, &quot;password&quot;: &quot;#(userPassword)&quot;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">48</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1025</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token =  response.user.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref bg-step">5</div>
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request {user: {email: &quot;karate@test12.com&quot;, password: &quot;karate123&quot;}}</span>
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -175,20 +327,48 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[2:18]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref bg-step">6</div>
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {article: {title: &quot;api tester bro&quot;, description: &quot;api tester bro&quot;, body: &quot;api tester bro&quot;, tagList: []}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">590</div>
+    <div class="time-cell passed">495</div>
   </div>
 
    
@@ -203,48 +383,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[2:18]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref bg-step">7</div>
+    <div class="step-container" id="0.18">
+      <div class="step-ref failed">18</div>
       
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2:18]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.8">
-      <div class="step-ref bg-step">8</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def token =  response.user.token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell failed">25</div>
   </div>
 
    
@@ -266,13 +418,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.19">
-      <div class="step-ref failed">19</div>
+      <div class="step-ref skipped">19</div>
       
-      <div class="step-cell failed">
-        <span>*</span>&nbsp;<span>def uniqueTitle = &#39;Trash-&#39; + karate.timestamp()</span>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def articleId = response.article.slug</span>
       </div>
     </div>
-    <div class="time-cell failed">2</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -293,11 +445,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.20">
-      <div class="step-ref skipped">20</div>
+    <div class="step-container" id="0.21">
+      <div class="step-ref skipped">21</div>
       
       <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def requestBody = {&quot;article&quot;: {title: uniqueTitle, description: &quot;Trash&quot;, body: &quot;Trash&quot;, tagList: []}}</span>
+        <span>Given</span>&nbsp;<span>params { limit: 10, offset: 0}</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -325,7 +477,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref skipped">22</div>
       
       <div class="step-cell skipped">
-        <span>Given</span>&nbsp;<span>header Authorization = &#39;Token &#39; + token</span>
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -353,7 +505,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref skipped">23</div>
       
       <div class="step-cell skipped">
-        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+        <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -381,7 +533,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref skipped">24</div>
       
       <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>request requestBody</span>
+        <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -409,35 +561,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref skipped">25</div>
       
       <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.26">
-      <div class="step-ref skipped">26</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>status 201</span>
+        <span>And</span>&nbsp;<span>match response.articles[0].title == &#39;api tester bro&#39;</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -465,7 +589,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref skipped">27</div>
       
       <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>def articleId = response.article.slug</span>
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;,articleId</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -493,7 +617,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref skipped">28</div>
       
       <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>match response.article.title == uniqueTitle</span>
+        <span>When</span>&nbsp;<span>method Delete</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -517,11 +641,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.30">
-      <div class="step-ref skipped">30</div>
+    <div class="step-container" id="0.29">
+      <div class="step-ref skipped">29</div>
       
       <div class="step-cell skipped">
-        <span>Given</span>&nbsp;<span>params { limit: 10, offset: 0}</span>
+        <span>Then</span>&nbsp;<span>status 204</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -549,7 +673,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref skipped">31</div>
       
       <div class="step-cell skipped">
-        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+        <span>Given</span>&nbsp;<span>params {limit: 10 , offset: 0}</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -577,7 +701,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref skipped">32</div>
       
       <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>method Get</span>
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -605,7 +729,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref skipped">33</div>
       
       <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -633,230 +757,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref skipped">34</div>
       
       <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>match response.articles contains deep { title: uniqueTitle }</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.36">
-      <div class="step-ref skipped">36</div>
-      
-      <div class="step-cell skipped">
-        <span>Given</span>&nbsp;<span>header Authorization = &#39;Token &#39; + token</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.37">
-      <div class="step-ref skipped">37</div>
-      
-      <div class="step-cell skipped">
-        <span>Given</span>&nbsp;<span>path &#39;articles&#39;, articleId</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.38">
-      <div class="step-ref skipped">38</div>
-      
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>method Delete</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.39">
-      <div class="step-ref skipped">39</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>status 204</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.41">
-      <div class="step-ref skipped">41</div>
-      
-      <div class="step-cell skipped">
-        <span>Given</span>&nbsp;<span>params {limit: 10 , offset: 0}</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.42">
-      <div class="step-ref skipped">42</div>
-      
-      <div class="step-cell skipped">
-        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.43">
-      <div class="step-ref skipped">43</div>
-      
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>method Get</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.44">
-      <div class="step-ref skipped">44</div>
-      
-      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
@@ -881,11 +781,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.45">
-      <div class="step-ref skipped">45</div>
+    <div class="step-container" id="0.35">
+      <div class="step-ref skipped">35</div>
       
       <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>match response.articles !contains { title: uniqueTitle }</span>
+        <span>And</span>&nbsp;<span>match response.articles[0].title != &#39;api tester bro&#39;</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
