@@ -2,18 +2,23 @@ Feature: Articles
 
   Background: Define URL
     Given url apiUrl
+    * def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json')
+    * def dataGenerator = Java.type("helpers.DataGenerator")
+    * set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title
+    * set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body
+    * set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description
 
-    #   @ignore
-    # Scenario: Create a new article
-    #   Given path 'articles'
-    #   And request {article: {title: "tester tester", description: "test test", body: "test test", tagList: []}}
-    #   When method post
-    #   Then status 201
-    #   And match response.article.title == 'tester tester'
-    # @debug
+      @debug
+    Scenario: Create a new article
+      Given path 'articles'
+      And request articleRequestBody
+      When method post
+      Then status 201
+      And match response.article.title == articleRequestBody.article.title
+    
     Scenario: create and delete an article
       Given path 'articles'
-      And request {article: {title: "api tester bro", description: "api tester bro", body: "api tester bro", tagList: []}}
+      And request articleRequestBody
       When method post
       Then status 201
       * def articleId = response.article.slug
@@ -22,7 +27,7 @@ Feature: Articles
       Given path 'articles'
       When method Get
       Then status 200
-      And match response.articles[0].title == 'api tester bro'
+      And match response.articles[0].title == articleRequestBody.article.title
 
       Given path 'articles',articleId
       When method Delete
@@ -32,6 +37,6 @@ Feature: Articles
       Given path 'articles'
       When method Get
       Then status 200
-      And match response.articles[0].title != 'api tester bro'
+      And match response.articles[0].title != articleRequestBody.article.title
 
 
