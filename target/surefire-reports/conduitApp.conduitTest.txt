@@ -1,26 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: conduitApp.conduitTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.672 s <<< FAILURE! -- in conduitApp.conduitTest
-conduitApp/feature/Articles.[1:12] Create a new article -- Time elapsed: 2.591 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-status code was: 401, expected: 201, response time in milliseconds: 494, url: https://conduit-api.bondaracademy.com/api/articles, response: 
-{"status":"error","message":"missing authorization credentials"}
-classpath:conduitApp/feature/Articles.feature:16
-	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1921)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
-	at java.base/java.util.Optional.ifPresent(Optional.java:178)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.290 s -- in conduitApp.conduitTest

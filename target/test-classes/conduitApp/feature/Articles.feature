@@ -8,7 +8,7 @@ Feature: Articles
     * set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body
     * set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description
 
-      @debug
+      # @debug
     Scenario: Create a new article
       Given path 'articles'
       And request articleRequestBody

@@ -15,8 +15,8 @@ function fn() {
     config.userPassword = 'karate123'
   }
 
-  var accessToken = karate.callSingle('classpath:helpers/CreateToken.feature', config).authToken
-  karate.configure('headers', { Authorization: 'Token' + accessToken })
+  var accessToken = karate.callSingle('classpath:helpers/CreateToken.feature', config).token
+  karate.configure('headers', { Authorization: 'Token ' + accessToken })
 
   return config;
 }
