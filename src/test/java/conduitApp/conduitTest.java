@@ -28,15 +28,6 @@ class conduitTest {
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
 
-    // @Test
-    // void testParallel() {
-    // Results results = Runner.path("classpath:conduitApp")
-    // .outputCucumberJson(true)
-    // .parallel(3);
-    // generateReport(results.getReportDir());
-    //
-    // }
-
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] { "json" }, true);
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
@@ -46,14 +37,23 @@ class conduitTest {
         reportBuilder.generateReports();
     }
 
-    // @Karate.Test
-    // Karate testAll() {
-    // return Karate.run().relativeTo(getClass());
-    // }
-
-    // @Karate.Test
-    // Karate testTags() {
-    // return Karate.run().tags("@debug").relativeTo(getClass());
-    // }
-
 }
+
+// @Karate.Test
+// Karate testAll() {
+// return Karate.run().relativeTo(getClass());
+// }
+
+// @Karate.Test
+// Karate testTags() {
+// return Karate.run().tags("@debug").relativeTo(getClass());
+// }
+
+// @Test
+// void testParallel() {
+// Results results = Runner.path("classpath:conduitApp")
+// .outputCucumberJson(true)
+// .parallel(3);
+// generateReport(results.getReportDir());
+//
+// }

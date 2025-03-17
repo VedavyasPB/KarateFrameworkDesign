@@ -1,4 +1,4 @@
-    @parallel=false @debug
+    # @parallel=false @debug
 Feature: Sign Up New User
 
   Background: Preconditions
